@@ -1,0 +1,16 @@
+Precedence
+!
+*,/,%
++,-
+<,<=,>,>=
+==,!=
+&&
+||
+=
+
+Associativity
+() , ++ , --                left-right
++ , - , ++ , --             left-right
+* , / , %                   left-right
++ , -                       left-right
+= , += , -= , *= , /=       right-left

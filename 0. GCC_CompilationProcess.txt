@@ -1,0 +1,27 @@
+add -m32 flag to compile 32bit
+
+> gcc -c hello.c
+-c: compile into object file
+
+> gcc -o hello.exe hello.o
+link object file with executable file
+
+> g++ -o myprog.exe file1.cpp file2.cpp
+Compile and Link Multiple Source Files
+
+> g++ -c file1.cpp
+> g++ -c file2.cpp
+> g++ -o myprog.exe file1.o file2.o
+compile each of the source files separately into object file, and link them together in the later stage
+
+> cpp hello.c > hello.i
+expand headers(#include) and macros(#define)
+
+> gcc -S hello.i
+-S option produce assembly code, instead of object code
+
+> as -o hello.o hello.s
+assembler (as.exe) converts the assembly code into machine code in the object file "hello.o"
+
+> ld -o hello.exe hello.o ...libraries...
+Finally, the linker (ld.exe) links the object code with the library code to produce an executable file "hello.exe"

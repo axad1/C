@@ -1,0 +1,56 @@
+INTEGER
+%d      signed int decimal integer
+%u      unsigned decimal
+
+%I      not valid
+%i	signed integer
+
+%hi	signed short
+%hu	unsigned short
+
+%l | %ld |%li	signed long
+%lu	unsigned long
+
+%lli | %lld	long long signed
+%llu	unsigned long long
+
+%n	prints nothing
+
+%o      unsigned octal
+
+%x      unsigned hexadecimal lowercase
+%X      unsigned hexadecimal uppercase
+
+%p	pointers
+
+FIELD_WIDTH for INTEGERS
+%10d    width 10
+%-2d    left-justified
+%+2d    always display sign
+% 2d    display space if no sign
+
+------------------------------------------------
+
+FLOATING_POINT
+%f      signed float or double
+%lf	double
+%Lf	long double
+%e      signed float or double in exponential notation
+%E	exponential scientific notation of floats
+%g      large floating point in exponential notation with no extra zeros
+%G	exponential notation
+
+FIELD_WIDTH for FLOATING_POINT
+%m.nf
+m = total field width including decimal and fractional part
+n = desired number of decimal places
+%6.2f    =   225.41     
+%2.2f    =   1.23
+
+------------------------------------------------
+
+CHARACTER
+%c      for character
+%s      for string
+
+
