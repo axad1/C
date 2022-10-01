@@ -103,7 +103,7 @@ void show()
     FILE *in = fopen(FILENAME, "r");
     if(!in)
     {
-        puts("\t\t** File error");
+        puts("\t\t** Contact list is empty.");
         return;
     }
     char name[SIZE], num[SIZE];
@@ -137,7 +137,7 @@ void searchname()
     FILE *in = fopen(FILENAME, "r");
     if(!in)
     {
-        puts("\t\t** File error");
+        puts("\t\t** Contact list is empty.");
         return;
     }
 
@@ -178,7 +178,7 @@ void searchnumber()
     FILE *in = fopen(FILENAME, "r");
     if(!in)
     {
-        puts("\t\t** File Error");
+        puts("\t\t** Contact list is empty");
         return;
     }
 
@@ -218,7 +218,7 @@ void delcontact()
     FILE *in = fopen(FILENAME, "r");
     if(!in)
     {
-        puts("\t\t** File error");
+        puts("\t\t** Contact list is empty");
         return;
     }
     //	get name to delete

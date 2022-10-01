@@ -6,7 +6,7 @@ void Login()
     FILE *in = fopen("users.dat", "r");
     if (!in)
     {
-        puts("\t\t** File error");
+        puts("\t\t** No user is registered. (Kindly register a user first)");
         return;
     }
 
@@ -39,9 +39,9 @@ void Login()
             {
                 tname[strlen(tname) - 1] = '\0';
                 //	for linux
-                mkdir("data", 0777);
+//                mkdir("data", 0777);
                 //	for windows
-//                mkdir("data");
+                mkdir("data");
                 char loc[50] = "data/";
                 sscanf(strcat(loc, strcat(tname, ".dat")), "%s", FILENAME);
                 menu();
