@@ -1,0 +1,63 @@
+Hi I am Asad.
+
+This is my final project for cs50 called Phonebook.
+
+It is a command-line-program to store contacts.
+
+There are three options - Login, Register, Exit.
+
+When you try to login it checks for users - if there are no user registered - it shows the message that no user is registered.
+
+Now we try to register a user.
+
+It asks for the username and password.
+
+If there is any empty field - it will show the error message - invalid input.
+
+If the username already exists it will show the error message - user already exist.
+
+If the user is registered successfully it shows the success message.
+
+Now we try to login - It asks for the username and password.
+
+If the login is successfull - It shows the menu of various options like add new contact, display all contacts, search by name, search by number, delete contact, delete all contacts and logout.
+
+Now I want to display all contacts - it shows that the list is empty.
+
+So i will add a new contact.
+
+It asks for the contact name and number.
+
+If there is any empty field - it will show the error message - invalid input.
+
+Again try to add new contact - it shows success message.
+
+I can see my all contacts now.
+
+I can search the contact by name.
+
+It asks for the contact name to search.
+
+If the name exist it will show the contact details.
+
+I can search the contact by it's number.
+
+It asks for the contact number to search.
+
+If the number exist it will show the contact details.
+
+I can delete a contact.
+
+It asks for the contact name to delete.
+
+If the contact exist it will delete it.
+
+I can delete all contacts.
+
+It will prompt the user for yes or no - on yes it will clear the file - and on no it will return to the menu.
+
+Now i can logout to return to the main menu.
+
+I've tried my best to implement various validation rules.
+
+This is cs50.

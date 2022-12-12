@@ -1,5 +1,5 @@
 #include "helper.c"
-#include <sys/stat.h>
+//#include <sys/stat.h>
 //#include <io.h>  //	to use mkdir("data");
 void Login()
 {
@@ -39,11 +39,12 @@ void Login()
             {
                 tname[strlen(tname) - 1] = '\0';
                 //	for linux
-//                mkdir("data", 0777);
+                //	mkdir("data", 0777);
                 //	for windows
-                mkdir("data");
-                char loc[50] = "data/";
-                sscanf(strcat(loc, strcat(tname, ".dat")), "%s", FILENAME);
+				//	mkdir("data");
+                //	char loc[50] = "data/";
+                //	sscanf(strcat(loc, strcat(tname, ".dat")), "%s", FILENAME);
+                sscanf(strcat(tname, ".dat"), "%s", FILENAME);
                 menu();
             }
             else
